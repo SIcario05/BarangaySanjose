@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request and Registration Forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="bg-primary text-white p-3 text-center">
+        <h1>Request and Registration Forms</h1>
+        <nav>
+            <a href="index.php" class="btn btn-light btn-sm">Home</a>
+            <a href="captain_info.html" class="btn btn-light btn-sm">Barangay Captain</a>
+            <a href="contact_us.html" class="btn btn-light btn-sm">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2>Fill Out or Download Forms</h2>
+        <p>Please choose a form below to fill out or download.</p>
+        
+        <div class="form-group">
+            <a href="form_downloads/request_form.pdf" download class="btn btn-primary">Download Request Form</a>
+        </div>
+        <div class="form-group">
+            <a href="form_downloads/registration_form.pdf" download class="btn btn-primary">Download Registration Form</a>
+        </div>
+        
+        <!-- Form Submission Section -->
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="text" name="contact" id="contact" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Completed Form (PDF):</label>
+                <input type="file" name="file" id="file" class="form-control" accept=".pdf" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit Form</button>
+        </form>
+        
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        &copy; 2024 Barangay Website. All rights reserved.
+    </footer>
+</body>
+</html>

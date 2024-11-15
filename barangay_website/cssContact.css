@@ -1,0 +1,33 @@
+/* Contact Form Page Styles */
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.card-body h2 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+form label {
+    font-weight: bold;
+    color: #495057;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border-radius: 5px;
+}
+
+form button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}

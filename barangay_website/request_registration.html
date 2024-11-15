@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request and Registration Forms</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css1.css">
+    <link rel="stylesheet" href="assets/css/consolidated.css">
+
+
+
+</head>
+<body>
+    
+     <!-- Header with logo and title -->
+     <div class="header">
+        <img src="assets/images/brgylogo.jpg" alt="Barangay Logo"> <!-- Replace with actual logo path -->
+        <h1>Download & Submit Forms</h1>
+    </div>
+
+    <!-- Navbar with links -->
+        <div class="navbar">
+            <a href="index.php">Home</a>
+            <a href="captain_info.html">Barangay Captain</a>
+            <a href="request_registration.html" id="selected">Request Forms</a>
+            <a href="about.html">About the Barangay</a>
+            <a href="announcements.php">Announcements</a> <!-- Link to Announcements page -->
+            <a href="contact_us.php">Contact Us</a>
+        </div>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2>Fill Out or Download Forms</h2>
+        <p>Please choose a form below to fill out or download.</p>
+        
+        <div class="form-group">
+            <a href="form_downloads/request_form.pdf" download class="btn btn-primary">Download Request Form</a>
+        </div>
+        <div class="form-group">
+            <a href="form_downloads/registration_form.pdf" download class="btn btn-primary">Download Registration Form</a>
+        </div>
+        
+        <!-- Form Submission Section -->
+        <h3>Submit Your Completed Form</h3>
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="text" name="contact" id="contact" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Completed Form (PDF):</label>
+                <input type="file" name="file" id="file" class="form-control" accept=".pdf" required>
+            </div>
+            <button type="submit" class="btn btn-success">Submit Form</button>
+        </form>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section">
+            <img src="assets/images/brgylogo.jpg" alt="Barangay Logo">
+        </div>
+        
+        <div class="section">
+            <h4>Republic of the Philippines</h4>
+            <p>All content is in the public domain unless otherwise stated.</p>
+        </div>
+
+        <div class="section">
+            <h4>About GOVPH</h4>
+            <ul>
+                <li><a href="#">Official Gazette</a></li>
+                <li><a href="#">Open Data Portal</a></li>
+                <li><a href="#">Send us your feedback</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h4>Government Links</h4>
+            <ul>
+                <li><a href="https://www.foi.gov.ph/agencies/op/">Office of the President</a></li>
+                <li><a href="https://www.ovp.gov.ph/">Office of the Vice President</a></li>
+                <li><a href="https://legacy.senate.gov.ph/">Senate of the Philippines</a></li>
+                <li><a href="https://www.congress.gov.ph/">House of Representatives</a></li>
+                <li><a href="https://sc.judiciary.gov.ph/">Supreme Court</a></li>
+                <li><a href="https://ca.judiciary.gov.ph/">Court of Appeals</a></li>
+                <li><a href="https://sb.judiciary.gov.ph/">Sandiganbayan</a></li>
+            </ul>
+        </div>
+
+        <div class="section"> <!--Social Links-->
+        <h4>Social Links</h4>
+            <a href="https://www.facebook.com/profile.php?id=100069919052937&sk=about" id="whitelink"> <i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>  <!--Social Links End-->
+    </footer>
+</body>
+</html>
